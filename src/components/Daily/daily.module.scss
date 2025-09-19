@@ -1,0 +1,74 @@
+.daily {
+    margin-top: 50px;
+
+    &__controls {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 7px;
+    }
+
+    &__btn {
+        box-shadow: 2px 5px 25px -3px rgba(180, 180, 180, 0.25);
+        border-radius: 5px;
+        font-size: 18px;
+        padding: 6px 20px;
+
+        &:hover {
+            background: #4793ff;
+            color: #fff;
+        }
+    }
+
+    &__content {
+        box-shadow: 2px 5px 25px -3px rgba(180, 180, 180, 0.25);
+        border-radius: 0 0 20px 20px;
+        padding: 20px;
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        gap: 20px;
+        margin-bottom: 20px;
+    }
+
+    &__item {
+        background: rgba(71, 147, 255, 0.2);
+        border-radius: 10px;
+        padding: 11px;
+    }
+
+    &__week {
+        font-weight: 500;
+        font-size: 18px;
+        color: #000;
+        margin-bottom: 5px;
+    }
+
+    &__date {
+        font-weight: 400;
+        font-size: 14px;
+        color: #939cb0;
+        margin-bottom: 12px;
+    }
+
+    &__img {
+        width: 44px;
+        height: 46px;
+        object-fit: contain;
+        margin-bottom: 15px;
+    }
+
+    &__temp {
+        font-weight: 500;
+        font-size: 18px;
+        color: #000;
+    }
+
+    &__night, &__desc {
+        font-size: 13px;
+        color: #939cb0;
+    }
+
+    &__desc {
+        margin-top: 6px;
+    }
+}
